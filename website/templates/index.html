@@ -1,5 +1,5 @@
 {% load static %}
-
+{% block content %}
 
 <!DOCTYPE HTML>
 <!--
@@ -22,7 +22,6 @@
   {% block head_extra %}  {% endblock head_extra %}
 </head>
 <body class="landing is-preload">
-{% block content %}
 
   <!-- Page Wrapper -->
   <div id="page-wrapper">
@@ -50,7 +49,7 @@
 
     <!-- Banner -->
     <section id="banner">
-      <img src="{% static 'website/images/topdown-house.jpg' %}" alt=""/>
+      <img src="" alt=""/>
       <div class="inner">
         <h2>PNW Tree Consultants & Services</h2>
         <p>Serving Western Washington<a href=""></a></p>
@@ -89,8 +88,9 @@
             aenean mi ligula.</p>
         </div>
       </section>
+      
       <section class="spotlight">
-        <div class="image"><img src="{% static 'website/images/best-treeclimber.png' %}" alt=""/></div>
+        <div class="image"><img src="{% static 'images/topdown-house.jpg' %}" alt=""/></div>
         <div class="content">
           <h2>Tortor dolore feugiat<br/>
             elementum magna</h2>
